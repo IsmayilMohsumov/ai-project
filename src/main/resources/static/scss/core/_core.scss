@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $poppins;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    transition: .3s all ;
+}
+
+body.dark{
+    background-color: #2C394B;
+    .header{
+        background-color: #082032;
+
+        .searchbox{
+            background-color:#2C394B ;
+
+            input{
+                background-color:#2C394B;
+            }
+        }
+    }
+
+    .sidebar{
+        background-color: #082032;
+    }
+
+    .maintable{
+        // background-color: #1E1D1D;
+        background-color: #2C394B;
+
+        .table  {
+            border-top: 1px solid #334756;
+            .maintable__td {
+                border-top: 1px solid #334756;
+                color : #fff;
+
+                .maintable__td__a{
+                    color:#fff
+                }
+            }
+
+            .maintable__th{
+                border: 1px solid #334756;
+                border: none;
+                color: #fff;
+                font-weight: 500;
+            }
+
+            .tbody__th{
+                border-top: 1px solid #334756;
+                color : #fff;
+
+            }
+
+
+
+            .maintable__td__icon{
+
+                
+                border-top: 1px solid #334756;
+
+                .maintable__td__icon__link{
+
+                    .fa-star{
+                        color: #fff;
+                    }
+                    color: #fff;
+
+                    i{
+                        &:hover{
+                            color: #082032;
+                        }
+                    }
+                }
+            }
+
+
+            
+
+        }
+    }
+
+    .table tbody+tbody {
+        border-top: 1PX SOLID #FFF;
+    }
+
+    .topBtn{
+        background-color: #082032;
+    }
+
+    .create{
+        background-color:#2C394B;
+
+        .create__header{
+            border-bottom:1px solid  #334756;
+
+        }
+
+        .create__header__content__cancel{
+            color: #fff;
+            background-color:#2C394B;
+
+            &:hover{
+                background-color: #082032;
+                color: #fff;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+
+        .create__header__content__logo{
+            color: #fff;
+        }
+
+        .create__header__btn{
+            background-color: #082032;
+            color: #fff;
+            &:hover{
+                // box-shadow: 0 4px 2px -2px rgb(32, 32, 32);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+
+        
+
+        .input-group{
+            .input-group-prepend{
+
+                .input-group-text{
+                    background-color: #082032;
+                    border: none;
+                    i{
+                        color: #fff;
+                    }
+                }
+                
+            }
+        }
+
+      
+
+        .showbtn{
+            background-color: #082032;
+            color: #fff;
+            &:hover{
+                // box-shadow: 0 4px 2px -2px rgb(32, 32, 32);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                background-color: #082032;
+            }
+        }
+
+        .form-control{
+            background-color: #082032;
+            border: none;
+            caret-color: #fff;
+            color: #fff;
+        }
+        .form-control::placeholder{
+            color: #fff;
+        }
+
+
+
+    }
+    
+}
+
+.content {
+    display: flex;
+}
+
+.topBtn{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    background-color: #2E8BC0;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    color: #fff;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+
+
+    &:hover{
+        color: #fff;
+        text-decoration: none;
+        background-color: #145DA0;
+
+    }
+}
+
+
+
+@media print { 
+    /* All your print styles go here */
+    #header, #sidebar { display: none !important; } 
+}
+
+
+.iti {
+    width: 100%;
+}

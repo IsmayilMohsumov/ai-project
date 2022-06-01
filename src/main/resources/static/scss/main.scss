@@ -1,0 +1,28 @@
+// Abstract files
+@import "abstracts/variables";
+
+// Core files
+@import "core/core";
+@import "core/fonts"; 
+// Components
+// @import "components/all " 
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/create";
+// @import "pages/create";
+@import "pages/signin";
+@import "pages/confirmation";
+@import "pages/forgotpassword";
+
+// Sections
+@import "sections/sidebar";
+@import "sections/maintable"; 
+@import "sections/startheader"; 
+@import "sections/starthero"; 
+@import "sections/startmain"; 
+@import "sections/startgrow"; 
+
+

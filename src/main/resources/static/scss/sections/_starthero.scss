@@ -1,0 +1,16 @@
+.starthero{
+    min-width: 100vh;
+    padding: 115px 0;
+    background-image: url("/assets/Image/bg/6149a932ce9fa7d6d5a76c93_Frame\ 772\ \(2\)\ \(1\).jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+    &__title{
+        color: #fff;
+    }
+}

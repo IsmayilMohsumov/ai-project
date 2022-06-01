@@ -1,0 +1,280 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="shortcut icon" href="assets/Image/icon/contact-book-icon-9.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css?40">
+<title>Contact Book</title>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="header" id="header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-12 d-flex align-items-center justify-content-between">
+                    <div class="brand d-flex align-items-center">
+                        <div class="header__menu" id="btn">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <i class="fas fa-address-book mr-2 " style="color: #fff; font-size: 35px;"></i>
+                        <a href="users.html" class="header__link">
+                            <h1 class="header__link__logo mb-0">Contact Book</h3>
+                        </a>
+                        
+                    </div>
+                    <div class="searchbox">
+                        <input type="search" placeholder="Search">
+                        <div class="searchbox__icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="darkLight-searchbox">
+                        <div class="dark-light">
+                            <i class="fas fa-moon"></i>
+                            <i class="far fa-sun"></i>
+                        </div>
+
+                       
+                        
+                    </div>
+
+                    <!-- <div class="searchbox__icon2">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-times"></i>
+                    </div> -->
+                  
+
+                    
+                    <div class="account__box">
+                        <h5 class="account__box__name mb-0" >
+                            Ramal Abaszade
+                        </h5>
+                        <a href="#" class="account__box__link">
+                            <div class="account__box__link__logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- <div class="account__box2">
+                        <a class="account__box2__link" href="Signin.html">
+                            Sign In
+                        </a>
+                        <span style="color: #fff; margin-left: 10px;">/</span>
+                        <a class="account__box2__link" href="Signup.html">
+                            Sign up
+                        </a>
+
+                    </div> -->
+
+                    
+                  
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <div class="content">
+        <!-- SIDEBAR START -->
+        <section class="sidebar">
+            <ul class="sidebar__list">
+                <li>
+                    <a class="sidebar__list__link" href="Create.html">
+                        <i class="fas fa-plus"></i>
+                        <span class="sidebar__list__li">Create Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidebar__list__link" href="users.html">
+                        <i class="fas fa-user"></i>
+                        <span class="sidebar__list__li">Contacts</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a class="sidebar__list__link" href="#">
+                        <i class="fas fa-folder-open"></i>
+                        <span class="sidebar__list__li">Directory</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a class="sidebar__list__link" href="#">
+                        <i class="fas fa-file-upload"></i>
+                        <span class="sidebar__list__li">Import</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a class="sidebar__list__link" href="#">
+                        <i class="fas fa-file-download"></i>
+                        <span class="sidebar__list__li">Export</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a class="sidebar__list__link" href="#">
+                        <i class="fas fa-print"></i>
+                        <span class="sidebar__list__li">Print</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a class="sidebar__list__link" href="#">
+                        <i class="fas fa-trash-alt"></i>
+                        <span class="sidebar__list__li">Trash</span>
+                    </a>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        <!-- SIDEBAR END -->
+        
+        <!-- MAIN CREATE START -->
+        <section class="create" id="create">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12  d-flex align-items-center ">
+                        
+                        <div class="create__header d-flex align-items-center justify-content-between ">
+                            <div class="create__header__content d-flex justify-content-center align-items-center">
+                                <a href="users.html" class="create__header__content__cancel mr-3" id="btn">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                                <h5 class="create__header__content__logo mb-0">Create contact</h5>
+                            </div>
+
+                             <a href="#" class="create__header__btn">
+                                Save
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-12  d-flex align-items-center justify-content-center">
+                        <div class="create__upload  d-flex justify-content-center align-items-center flex-column">
+                            <div class="create__upload__pp">
+                                <img src="assets/Image/icon/avatardefault_92824.png" id="photo" alt="">
+                                <input type="file" id="file">
+                                <label for="file" id="uploadBtn"><i class="fas fa-plus-circle"></i></label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="create__form">
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="Prefix" aria-label="Prefix" aria-describedby="basic-addon1">
+
+
+                        <div class="input-group mb-3 ">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="Firstname" aria-describedby="basic-addon1">
+                        </div>
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="Middlename" aria-label="Middlename" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control mb-3" placeholder="Last name" aria-label="Lastname" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="Suffix" aria-label="Suffix" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="Phonetic first" aria-label="Phoneticfirst" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="phonetic middle" aria-label="Phoneticmiddle" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="Phonetic last" aria-label="Phoneticlast" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="Nickname" aria-label="Nickname" aria-describedby="basic-addon1">
+
+                        <div class="input-group  mb-3 ">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-building"></i></span>
+                            </div>
+                            <input type="text" class="form-control " placeholder="Company" aria-label="Company" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="mb-3 ">
+                            <input type="tel" id="phone-picker" class="form-control w-100 " placeholder="Phone" aria-label="Phone">
+                        </div>
+                        
+                        <input type="text" class="form-control showinput mb-3" placeholder="Department" aria-label="Department" aria-describedby="basic-addon1">
+
+                        <div class="input-group  mb-3 ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-globe"></i></span>
+                            </div>
+                            <input type="text" class="form-control " placeholder="Country" aria-label="Country" aria-describedby="basic-addon1">
+                        </div>
+                        
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="City" aria-label="City" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="Street address" aria-label="streetaddress" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control showinput mb-3" placeholder="Postal code" aria-label="Postalcode" aria-describedby="basic-addon1">
+
+                        <input type="text" class="form-control  mb-3" placeholder="Job title" aria-label="Jobtitle" aria-describedby="basic-addon1">
+
+                        <div class="input-group mb-3  ">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-birthday-cake"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Birthday mm/dd/yyyy" aria-label="Birthday" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3  ">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-link"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Website" aria-label="Website" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3 ">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-sticky-note"></i></span>
+                            </div>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+
+                          <div class="show mt-4 d-flex align-items-center justify-content-lg-end">
+                              <button class="showbtn" data-is-less="false">Show more</button>
+                          </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        <!-- MAIN CREATE END -->
+        
+    </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://intl-tel-input.com/node_modules/intl-tel-input/build/js/intlTelInput.js?72"></script>
+<script src="/assets/Js/script.js"></script>
+</body>
+</html>

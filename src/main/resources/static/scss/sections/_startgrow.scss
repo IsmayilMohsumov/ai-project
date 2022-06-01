@@ -1,0 +1,46 @@
+.Startgrow{
+    min-width: 100vh;
+    background-image: url("/assets/Image/bg/night-sky-stars-scenery-landscape-21-4K.jpg");
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title{
+        font-size: 32px;
+        line-height: 42px;
+        color: #fcfcfc;
+        font-weight: 300;
+    }
+
+    &__content{
+        color: #c6c6c6;
+        font-size: 16px;
+    }
+
+    &__btn{
+        width: 200px;
+        height: 45px;
+        border-radius: 5px;
+        background-color:#499CFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        transition: .3s all;
+
+        &:hover{
+            text-decoration: none;
+            background-color: #3d85da;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+    min-width: 100vh;
+        &__useful{
+        font-size: 16px;
+        font-weight: bold;
+        color: #444444;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+    }
+
+    &__ul{
+        list-style-type: none;
+
+        &__li{
+            margin: 15px;
+            .fas{
+                color: $base-color;
+                font-size: 12px;
+            }
+
+            a{
+                color: #777777;
+                transition: 0.3s;
+                display: inline-block;
+                line-height: 1;
+                
+                &:hover{
+                    text-decoration: none;
+                    color: $base-color;
+                }
+            }
+        }
+    }
+
+    &__services{
+        font-size: 16px;
+        font-weight: bold;
+        color: #444444;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+    }
+
+    &__contact{
+        font-size: 16px;
+        font-weight: bold;
+        color: #444444;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+        
+
+        &__p{
+            line-height: 26px;
+            color: #777777;
+            
+        }
+
+        &__link{
+            color: #777777;
+        }
+    }
+
+    &__about{
+        font-size: 16px;
+        font-weight: bold;
+        color: #444444;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+        
+
+        &__p{
+            line-height: 26px;
+            color: #777777;
+            
+        }
+
+        &__social-links{
+            i{
+                color: #777777;
+                margin: 10px;
+                transition: 0.3s;
+
+                &:hover{
+                    color: $base-color;
+                }
+            }
+
+
+        }
+    }
+
+    &__end{
+        background-color: #F2F4F7;
+        min-width: 100vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 300px;
+        
+        
+        .copyright{
+            color: #444444;
+            margin-bottom:10px ;
+        }
+        .credits{
+            color: #444444;
+
+            &__link{
+                color: $base-color;
+                &:hover{
+                    color: $base-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}   

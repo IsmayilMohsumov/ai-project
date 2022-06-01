@@ -1,0 +1,109 @@
+.sidebar{
+    width: 103px;
+    background-color: $base-color;
+    padding: 0px 10px;
+    transition: all .5s ease;
+    position: relative;
+    z-index: 9;
+    min-height: 100vh;
+
+    &.active{
+        width: 310px;
+        transition: all .3s;
+        visibility: visible;
+
+        .sidebar__list__li{
+            display: inline-block;
+        }
+
+        .exportbtn{
+            display: inline-block;
+        }
+    }
+
+    
+    
+    &__list{
+        margin-top: 5px;
+
+        li{
+            list-style: none;
+            position: relative;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            margin: 5px 0;
+
+            
+
+            a{
+                color: #fff;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                transition: .3s all;
+                border-radius: 10px;
+                white-space: nowrap;
+                text-align: center;
+                
+                // .exportbtn{
+                //     margin-left: 5px;
+                //     display: none;
+                //     border: none;
+                //     background-color: transparent;
+                // }
+
+                .sidebar__list__li{
+                    margin-left: 5px;
+                    display: none;
+                }
+
+              
+
+                .exportbtn{
+                    color:#fff;
+                    border: none;
+                    background: transparent;
+                    margin-left: 5px;
+                    display: none;
+
+
+                }
+    
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    color: $base-color;
+
+                    .exportbtn{
+                        color: $base-color;
+                    }
+                }
+    
+                i{
+                    height: 60px;
+                    min-width:50px;
+                    border-radius: 12px;
+                    line-height: 60px;
+                    text-align: center;
+                    margin-left: 13px;
+                }
+            }
+
+            .active{
+                background-color: rgb(255, 255, 255);
+                color: $base-color;
+            }
+
+        }
+    }
+
+        @media only screen and (max-width: 768px) {
+            & {
+                position: fixed;
+                visibility: hidden;
+            }
+        }
+
+      
+
+}

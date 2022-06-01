@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="shortcut icon" href="/Image/icon/contact-book-icon-9.ico">
+
+<link rel="stylesheet" href="/css/main.css">
+<title>Contact Book</title>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="header" id="header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-12 d-flex align-items-center justify-content-between">
+                    <div class="brand d-flex align-items-center">
+                        <div class="header__menu" id="btn">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <i class="fas fa-address-book mr-2 " style="color: #fff; font-size: 35px;"></i>
+                        <a href="users.html" class="header__link">
+                            <h1 class="header__link__logo mb-0">Contact Book</h3>
+                        </a>
+                        
+                    </div>
+                    <div class="searchbox">
+                        <input class="searchbox__input" type="search" placeholder="Search">
+                        <div class="searchbox__icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="darkLight-searchbox">
+                        <div class="dark-light">
+                            <i class="fas fa-moon"></i>
+                            <i class="far fa-sun"></i>
+                        </div>
+                    </div>
+
+                    
+                    <div class="account__box">
+                        <h5 class="account__box__name mb-0" >
+                            Ramal Abaszade
+                        </h5>
+                        <a href="#" class="account__box__link">
+                            <div class="account__box__link__logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- <div class="account__box2">
+                        <a class="account__box2__link" href="Signin.html">
+                            Sign In
+                        </a>
+                        <span style="color: #fff; margin-left: 10px;">/</span>
+                        <a class="account__box2__link" href="Signup.html">
+                            Sign up
+                        </a>
+
+                    </div> -->
+
+                    
+                  
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+
+
+    <div class="content">
+        <!-- SIDEBAR START -->
+        <section class="sidebar" id="sidebar">
+            <ul class="sidebar__list">
+                <li >
+                    <a href="Create.html" class="active">
+                        <i class="fas fa-plus"></i>
+                        <span class="sidebar__list__li " >Create Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <i class="fas fa-user"></i>
+                        <span class="sidebar__list__li">Contacts</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-star"></i>
+                        <span class="sidebar__list__li">favorites</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-file-upload"></i>
+                        <span class="sidebar__list__li">Import</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-file-download"></i>
+                        <button class="exportbtn" type="submit" >Export To Excel</button>
+                    </a>
+
+                    <style>
+                        
+                    </style>
+
+                </li>
+                <li>
+                    <a  type="button" class="printbtn" onclick="myPrint('maintable')">
+                        <i class="fas fa-print"></i>
+                        <span class="sidebar__list__li">Print & Download PDF</span>
+
+                        
+                    </a>
+                    
+                    <style>
+                        .printbtn{
+                            color: #fff;
+                        }
+                        .printbtn:hover{
+                            color: #192039;
+                        }
+                    </style>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-trash-alt"></i>
+                        <span class="sidebar__list__li">Trash</span>
+                    </a>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        <!-- SIDEBAR END -->
+        
+        <!-- MAIN START -->
+
+        <section class="maintable"  id="maintable">
+           <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                  <tr class="maintable__tr ">
+                    <th class="maintable__th " scope="col">CONTACS()</th>
+                    <th class="maintable__th" scope="col">Photo</th>
+                    <th class="maintable__th" scope="col">Name</th>
+                    <th class="maintable__th" scope="col">Email</th>
+                    <th class="maintable__th" scope="col">Phone Number</th>
+                    <th class="maintable__th" scope="col">Job title & company</th>
+                  </tr>
+                </thead>
+                <!-- <tbody>
+                    <tr class="maintable__tr">
+                        <th class="maintable__th border-0" scope="col">CONTACS()</th>
+                    </tr>
+                </tbody> -->
+                <tbody> 
+                    <tr >
+                        <th class="tbody__th" style="line-height: 50px;" scope="row">1</th>
+                        <td class="maintable__td"><img src="assets/Image/Create/a6b631f3-09ff-437a-80b2-2957f5ad9072 768px-Eo_circle_yellow_letter-k.svg.png" alt=""></td>
+                        <td class="maintable__td">Mark</td>
+                        <td class="maintable__td">abbaszade.ramal@gmail.com</td>
+                        <td class="maintable__td">0552220220</td>
+                        <td class="maintable__td">Jet </td>
+                        <td class="maintable__td__icon">
+                            
+                            <a class="maintable__td__icon__link" href="Edit.html">
+                                <i class="fas fa-user-edit mr-3 "></i>
+                            </a>
+                            <a class="maintable__td__icon__link" href="#">
+                                <i class="fas fa-user-times"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="tbody__th" style="line-height: 50px;" scope="row">1</th>
+                        <td class="maintable__td"><img src="assets/Image/Create/98a30441-6327-4430-9338-bb4e1c62349f images (1).png" alt=""></td>
+                        <td class="maintable__td">Mark</td>
+                        <td class="maintable__td">abbaszade.ramal@gmail.com</td>
+                        <td class="maintable__td">0552220220</td>
+                        <td class="maintable__td">Jet </td>
+                        <td class="maintable__td__icon">
+                            
+                            <a class="maintable__td__icon__link" href="Edit.html">
+                                <i class="fas fa-user-edit mr-3 "></i>
+                            </a>
+                            <a class="maintable__td__icon__link" href="#">
+                                <i class="fas fa-user-times"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="tbody__th" style="line-height: 50px;" scope="row">1</th>
+                        <td class="maintable__td"><img src="assets/Image/Create/98a30441-6327-4430-9338-bb4e1c62349f images (1).png" alt=""></td>
+                        <td class="maintable__td">Mark</td>
+                        <td class="maintable__td"><a class="maintable__td__a" href="mailto:@contact.Email">@contact.Email</a></td>
+                        <td class="maintable__td"><a  class="maintable__td__a" href="tel:@contact.Phone">@contact.Phone</a></td>
+                        <td class="maintable__td">Jet </td>
+                        <td class="maintable__td__icon">
+                            
+                            <form class="maintable__td__icon__link" method="post" asp-action="Favorite" asp-route-id="@contact.Id">
+                                <button type="submit" style="border:none; background-color:transparent; ">
+                        
+                                        <i class="fas fa-star mr-3" ></i>
+                                   
+                                </button>
+
+                            </form>
+
+                            <a class="maintable__td__icon__link" href="Edit.html">
+                                <i class="fas fa-user-edit mr-3 "></i>
+                            </a>
+                            <a class="maintable__td__icon__link" href="#">
+                                <i class="fas fa-user-times"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr >
+                        <th class="tbody__th" style="line-height: 50px;" scope="row">1</th>
+                        <td class="maintable__td"><img src="assets/Image/Create/98a30441-6327-4430-9338-bb4e1c62349f images (1).png" alt=""></td>
+                        <td class="maintable__td">Mark</td>
+                        <td class="maintable__td">abbaszade.ramal@gmail.com</td>
+                        <td class="maintable__td">0552220220</td>
+                        <td class="maintable__td">Jet </td>
+                        <td class="maintable__td__icon">
+                            
+                            <a class="maintable__td__icon__link" href="Edit.html">
+                                <i class="fas fa-user-edit mr-3 "></i>
+                            </a>
+                            <a class="maintable__td__icon__link" href="#">
+                                <i class="fas fa-user-times"></i>
+                            </a>
+                        </td>
+                    </tr>
+                  
+                 
+                </tbody>
+
+                
+              </table>
+           </div>
+        </section>
+        <!-- MAIN END -->
+        
+    </div>
+
+    <a href="Create.html" class="topBtn">
+        <i class="fas fa-plus"></i>
+    </a>
+    
+
+
+<script src="/assets/Js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
