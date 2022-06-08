@@ -9,7 +9,6 @@ import java.util.Map;
 @Data
 public class Landmark {
     private String description;
-    private float score;
+    private int score;
     private HashMap<String,Double> locations;
-
 }

@@ -8,8 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="shortcut icon" href="/Image/icon/contact-book-icon-9.ico">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/Image/icon/favicon2.png">
   <title>Vision</title>
+
+
+  <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+  <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+
+
 </head>
 <body>
 <!-- HEADER START -->
@@ -18,8 +26,8 @@
     <div class="row align-items-center">
       <div class="col-lg-12 d-flex align-items-center justify-content-between">
         <div class="brand d-flex align-items-center">
-          <a href="/start" class="header__link">
-            <h3 class="header__link__logo mb-0">Go back</h3>
+          <a href="/" class="header__link">
+            <h3 class="header__link__logo mb-0">Home</h3>
 
           </a>
 
@@ -32,44 +40,86 @@
 
 <!-- HERO START -->
 <section class="starthero col-lg-12" id="starthero">
-  <h1 class="starthero__title">Continue by adding picture</h1>
+  <h1 class="starthero__title">Label detection</h1>
 </section>
 <!-- HERO END -->
 
 <!-- MAIN START -->
 <section class="main col-lg-12" id="main">
   <div class="main__info">
-    <div class="col-md-6 mb-4">
-
-      <form class="md-form">
-        <div class="file-field">
-          <div class="z-depth-1-half mb-4">
-            <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" class="img-fluid"
-                 alt="example placeholder">
-          </div>
-          <div class="d-flex justify-content-center">
-            <div class="btn btn-mdb-color btn-rounded float-left">
-              <span>Choose file</span>
-              <input type="file">
-            </div>
-          </div>
-        </div>
-      </form>
-
+    <div class="main__info__imgbox">
+      <img src="/Image/index/labelfirstbox.png" alt="">
     </div>
     <div class="main__info__content">
       <h2 class="main__info__content__title">
-        Label detection
+        You saw something, but you don't know what is it?
       </h2>
       <p>
-        Please include a picture where is the visible text so the software can read the text for you
+        While travelling you may see some sculptures or architectural things, and you could be interested in the general information of this item
       </p>
     </div>
   </div>
 
-</section>
-<!-- MAIN START -->
+  <hr style="margin-top: 160px;">
 
+  <div class="main__info" style="margin-top: 200px;">
+
+    <div class="main__info__content">
+      <h2 class="main__info__content__title">
+        Explore sculptures and archaeological sites
+      </h2>
+      <p>
+        Get the possible things on the picture, so you can have general idea about the picture.
+      </p>
+
+    </div>
+
+    <div class="main__info__imgbox" style="margin-right: 0px; margin-left: 80px;">
+      <img src="/Image/index/label2ndbox.png" alt="">
+    </div>
+  </div>
+
+  <hr style="margin-top: 160px;">
+
+
+  <div class="main__info " style="margin-top: 200px;" >
+    <div class="main__info__imgbox">
+      <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" alt="">
+    </div>
+    <div class="main__info__content">
+      <h2 class="main__info__content__title">
+        Get started
+      </h2>
+      <p>
+        In order to start using just upload picture below and get the results.
+      </p>
+
+    </div>
+  </div>
+
+
+
+  <hr style="margin-top: 160px;">
+
+  <div class="main__info" style="margin-top: 200px;">
+
+    <div class="main__info__content">
+      <div class="file-field">
+
+        <div class="d-flex justify-content-center">
+          <div class="btn btn-mdb-color btn-rounded float-left">
+            <form action="/file-label" method="post" enctype="multipart/form-data">
+              <input type="file" name="myfile"/> <br/><br/>
+              <input type="submit" class="btn btn-success" value="Submit"/>
+            </form>
+            <p th:text="${status}" class="image-status"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 <button class="topBtn">
   <i class="fas fa-arrow-up"></i>
@@ -107,7 +157,6 @@
     Website developed by <a href="" class="credits__link">Juma Jumayev</a>
   </div>
 </div>
-<!-- =======FOOTER END======= -->
 
 <script src="assets/Js/StartPageJs.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>

@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/Image/icon/favicon2.png">
+    <title>Vision</title>
 </head>
 <body>
-$END$
+
+<header class="Startheader" id="Startheader">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 d-flex align-items-center justify-content-between">
+                <div class="brand d-flex align-items-center">
+                    <a href="/" class="header__link">
+                        <h3 class="header__link__logo mb-0">Home</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="starthero col-lg-12" id="starthero">
+    <h1 class="starthero__title">Result</h1>
+</section>
+
+<section class="main col-lg-12" id="main">
+    <div class="main__info">
+        <div class="col-md-6 mb-4">
+
+            <div class="file-field">
+                <div class="z-depth-1-half mb-4">
+                    <img th:src="${img}" class="img-fluid"
+                         alt="example placeholder">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="btn btn-mdb-color btn-rounded float-left">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main__info__content">
+            <h2 class="main__info__content__title" >
+                The text on the picture is
+            </h2>
+            <p th:text="${result}" class="display-4 text-info" id="myText">
+                Please include a picture where there is a text that is visible
+            </p>
+            <button onclick="handleClick()" class="btn btn-warning">Copy to clipboard</button>
+        </div>
+    </div>
+
+</section>
+<!--<p>The result of the image is </p>-->
+<!--<img th:src="${img}" class="result-image">-->
+<!--<p    th:text="${result}">Name of the place</p>-->
+<div class="footer__end text-center">
+    <div class="copyright">
+        All Rights Reserved
+    </div>
+    <div class="credits">
+        Website developed by <a href="" class="credits__link">Juma Jumayev</a>
+    </div>
+</div>
+
+<script>
+
+    function handleClick() {
+        var input = document.getElementById('myText').textContent;
+
+        navigator.clipboard.writeText(input);
+    }
+</script>
+
 </body>
 </html>

@@ -51,22 +51,24 @@ public class IndexController {
         return "text-detection";
     }
 
+//
+//    @GetMapping("/test")
+//    public String google(Model model){
+//
+//        return "google-maps";
+//    }
+
     @GetMapping("/label")
     public String labelDetection(Model model){
 
         return "label-detection";
     }
 
+    @GetMapping("/technologies")
+    public String technologiesUsed(Model model){
 
-
-    @GetMapping("/test")
-    public String testForChart(Model model){
-
-        return "test";
+        return "technologies-used";
     }
-
-
-
 
     @GetMapping("/register")
     public String register(){

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="/css/main.css">
 <link rel="shortcut icon" href="/Image/icon/favicon2.png">
-<title>Vision</title>
+    <title>JumbikAI</title>
 </head>
 <body>
     <!-- HEADER START -->
@@ -19,7 +19,7 @@
                 <div class="col-lg-12 d-flex align-items-center justify-content-between">
                     <div class="brand d-flex align-items-center">
                         <a href="/" class="header__link">
-                            <h3 class="header__link__logo mb-0">Vision Checker</h3>
+                            <h3 class="header__link__logo mb-0">JumbikAI</h3>
                         </a>
                         
                     </div>
@@ -53,8 +53,13 @@
                     Landmark detection
                 </h2>
                 <p>
-                    Gives coordinates for the detected entity
+                    Provides the possible names of the places with percentage rate.
                 </p>
+                <div class="account__box3">
+                    <form action="/landmark" method="get" >
+                        <button type="submit" class="btn btn-info">Get more info</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -64,15 +69,20 @@
            
             <div class="main__info__content">
                 <h2 class="main__info__content__title">
-                    Logo detection
+                    Text detection
                 </h2>
                 <p>
-                    Provides a textual description of the entity identified, a confidence score, and a bounding polygon for the logo in the file.
+                    Provides a textual description of the provided picture. The picture might contain some text, so you can use this feature to get text on picture.
                 </p>
+                <div class="account__box3">
+                    <form action="/text" method="get" >
+                        <button type="submit" class="btn btn-info">Get more info</button>
+                    </form>
+                </div>
             </div>
 
             <div class="main__info__imgbox" style="margin-right: 0px; margin-left: 80px;">
-                <img src="https://cloud.google.com/vision/docs/images/logo_annotated.png" alt="">
+                <img src="/Image/index/ss.png" alt="">
             </div>
         </div>
 
@@ -81,7 +91,7 @@
 
         <div class="main__info " style="margin-top: 200px;" >
             <div class="main__info__imgbox">
-                <img src="https://cloud.google.com/vision/docs/images/shanghai_labels.png" alt="">
+                <img src="/Image/index/labelcheckker.png" alt="">
             </div>
             <div class="main__info__content">
                 <h2 class="main__info__content__title">
@@ -91,6 +101,11 @@
                     Provides generalized labels for an image.
                     For each label returns a textual description, confidence score, and topicality rating
                 </p>
+                <div class="account__box3">
+                    <form action="/label" method="get" >
+                        <button type="submit" class="btn btn-info">Get more info</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -147,10 +162,10 @@
     
                     <div class="col-lg-3">
                         <h4 class="footer__contact">
-                                    Visioner
+                                    JUMBIKAI
                         </h4>
                         <p class="footer__contact__p">
-                            Visioner is software that detects objects and faces.
+                            The software provides some essential features for the travellers. Which might be very helpful while getting ready for a trip or even during the trip.
                         
                     </div>
     
@@ -170,7 +185,7 @@
                             </li>
                             <li class="footer__ul__li">
                                 <i class="fas fa-chevron-right"></i>
-                                <a href="#">Technologies used</a>
+                                <a href="/technologies">Technologies used</a>
                             </li>
                         </ul>
                     </div>
